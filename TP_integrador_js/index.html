@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7df637d74a.js" crossorigin="anonymous"></script>
+    <title>Utiles escolares</title>
+</head>
+
+<body>
+
+    <div class="menu container">
+        <header>
+            <div class="container-logo">
+
+                <i class="fa-solid fa-bars" class="menu-icono" alt="Menú"></i>
+                <h5>Menú</h5>
+            </div>
+
+
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+
+                </ul>
+            </nav>
+
+
+            <div class="Busqueda">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <input type="radio" alt="vaciar carrito">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Buscar">
+
+            </div>
+        </header>
+
+
+        <div class="Información">
+            <div class="fila">
+                <div class="col">
+                    <h2 id="nombre">Útiles escolares Originales</h2>
+                    <p id="descripcion">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe at inventore numquam
+                        cum possimus ad rem
+                        voluptate ut. Quod nostrum delectus corrupti dolorum rerum atque quos fugit in quas mollitia.
+                    </p>
+                    <div>
+                        <button onclick="limpiarPrecio()">Limpiar precio</button>
+                        <div>
+                            <h3>
+                                Precio final:
+                            </h3>
+                            <input id="inputPrecioFinal" type="hidden" value="20">
+                            <span id="precioFinal">$ 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="circulo-principal" id="circulo">
+                        <img src="imagenes/set1.jpg" alt="" id="fotoPrincipal">
+
+                    </div>
+                </div>
+
+                <div class="col descripción">
+                    <ul id="Descripcion">
+
+                        <li><a href="#">mmm</a></li>
+                        <li><a href="#">lll</a></li>
+                        <li><a href="#">hhh</a></li>
+                        <li><a href="#">gg</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="Rec">
+                    <div class="opcion">
+                        <div class="circulo color1">
+                            <img src="imagenes/clips.jpg" alt="" width="110px" height="70px">
+                            <div class="estrellas">
+                                5 <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>CLIPS</h3>
+                            <span class="precio">$200</span>
+                        </div>
+                        <button class="agregarAlCarrito" onclick="agregar(200)">Agregar al carrito +</a>
+                    </div>
+                    <div class="opcion">
+                        <div class="circulo color2">
+                            <img src="imagenes/resaltadores.jpg" alt="" width="110px" height="70">
+                            <div class="estrellas">
+                                5 <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>RESALTADORES</h3>
+                            <span>$600</span>
+                        </div>
+                        <button class="agregarAlCarrito" onclick="agregar(600)">Agregar al carrito +</a>
+                    </div>
+
+                    <div class="opcion">
+                        <div class="circulo color3">
+                            <img src="imagenes/senialadores.jpg" alt="" width="110px" height="70px">
+                            <div class="estrellas">
+                                5 <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>SEÑALADORES</h3>
+                            <span>$700</span>
+                        </div>
+                        <button class="agregarAlCarrito" onclick="agregar(700)">Agregar al carrito +</a>
+                    </div>
+
+                    <div class="opcion">
+                        <div class="circulo color4">
+                            <img src="imagenes/lapiz_pastel.jpg" alt="" width="110px" height="70px">
+                            <div class="estrellas">
+                                5 <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>LAPICES PASTELES</h3>
+                            <span>$540</span>
+                        </div>
+                        <button class="agregarAlCarrito" onclick="agregar(540)">Agregar al carrito +</a>
+                    </div>
+                    <div class="opcion">
+                        <div class="circulo color4">
+                            <img src="imagenes/lapiz_goma.jpg" alt="" width="110px" height="70px">
+                            <div class="estrellas">
+                                5 <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>LAPIZ CON GOMA</h3>
+                            <span>$120</span>
+                        </div>
+                        <button class="agregarAlCarrito" onclick="agregar(120)">Agregar al carrito +</a>
+
+                    </div>
+                    <div class="opcion">
+                        <div class="circulo color4">
+                            <img src="imagenes/fibras.jpg" alt="" width="110px" height="70px">
+                            <div class="estrellas">
+                                5 <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>FIBRAS PULPITO</h3>
+                            <span>$1200</span>
+                        </div>
+                        <button class="agregarAlCarrito" onclick="agregar(1200)">Agregar al carrito +</a>
+                    </div>
+                    <footer class="footer">
+                        <div class="footer-links">
+
+                            <h4>Regaleria</h4>
+                            <ul>
+                                <li><a href="#"> Nosotros</a></li>
+                                <li><a href="#"> Telefonos</a></li>
+                                <li><a href="#"> A-Z</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <h4> Seguinos!!</h4>
+                            <div class="social-link">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+
+                    </footer>
+
+                    <script src="main.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

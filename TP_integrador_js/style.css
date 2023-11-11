@@ -1,0 +1,266 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: plum;
+  font-size: 14px;
+}
+.container{
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: auto;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:  30px 0;
+}
+.container-logo{
+  display: flex;
+  align-items: center;
+}
+.container-logo i{
+  font-size: 20px;
+  background-color: aliceblue;
+  border: 2px solid;
+  margin-right: 2px;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 20px;
+}
+nav ul li a{
+  color:black;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav ul li a:hover{
+  color:green;
+}
+.Busqueda{
+  background: coral;
+  padding: 20px;
+  border-radius: 50px;
+}
+.Busqueda i{
+  margin-left: 10px;
+}
+.Busqueda input{
+  border: none;
+  outline: none;
+}
+.Informacion{
+  margin-top: 50px;
+}
+.fila{
+  display: flex;
+}
+.fila .col{
+  width: 33%;
+}
+.fila .col h2{
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom:  30px;
+}
+.fila .col p{
+  color:#875222;
+  max-width: 300px;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+.fila .col span{
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.fila .col button{
+  background-color:yellow;
+  color:blue;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: .10s;
+}
+.fila .col button i{
+  color: wheat;
+  background: fff;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.fila .col button:hover{
+  font-size: 14px;
+}
+.circulo-principal{
+  width: 500px;
+  height: 430px;
+  margin: auto;
+  
+  border-radius: 100% ;
+  text-align: center;
+  transition: .5s;
+}
+.circulo-principal img{
+  height: 100%;
+  position: center;
+  bottom: 30px;
+  transition: .10s;
+
+}
+.circulo-principal:hover{
+  transform: scale(.9);
+  background-color: beige;
+}
+.circulo-principal:hover img{
+  transform: scale(1.2);
+}
+.descripcion{
+  padding-left: 50px;
+}
+.Descripcion ul{
+  list-style: none;
+}
+.Descripcion li{
+  background-color: #875222;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 15%;
+  color: #000;
+  margin-right: 10px;
+
+}
+.Rec{
+  border-radius: 30px 30px 0;
+  background-color:wheat;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 1100px;
+  width: 100%;
+  height: 150px;
+}
+.Rec .circulo{
+  width: 180px;
+  margin: auto;
+  height: 180px;
+  border-radius: 80%;
+  text-align: center;
+  position: relative;
+
+}
+
+.Rec .circulo img{
+  height: 100%;
+  position: relative;
+  bottom: 10px;
+}
+.Rec .opcion{
+  position: relative;
+  bottom: 70px;
+  text-align: center;
+  color:orangered;
+  transition: .5s;
+  cursor: pointer;
+}
+.Rec .button a{
+  background-color: yellow;
+}
+.color1{
+  background-color: violet;
+}
+.color2{
+  background-color: orange;
+}
+.color3{
+  background-color: gold;
+}
+.color4{
+  background-color: lightpink;
+}
+.Rec .opcion:hover{
+  bottom: 90px;
+}
+.Rec .opcion .estrellas{
+  background-color: yellow;
+  width: fit-content;
+  color: black;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 14px;
+  padding: 3px;
+  border-radius: 8%;
+
+}
+.rec .opcion h3{
+  text-decoration: none;
+}
+
+.footer{
+  background-color: black;
+  color:aliceblue;
+  align-self: flex-end;
+  width: 100%;
+  height: 50px;
+  text-align:left;
+}
+.footer-links ul li a{
+  font-size: 18px;
+  text-decoration: none;
+  color:aliceblue;
+  list-style: none;
+  margin-bottom: 15px;
+  transition: all .3s ease;
+  display: flex;
+  
+  justify-content: space-between;
+  padding:  30px 0;
+
+}
+.footer-links ul li a:hover {
+  color:aqua;
+  padding-left: 6px;
+
+}
+.social-links a{
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: beige;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: rebeccapurple;
+  transition: all .5s ease;
+
+}
+.social-links a :hover{
+  background-color: blue;
+}
+
+.agregarAlCarrito {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
